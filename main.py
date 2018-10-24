@@ -16,6 +16,8 @@ feito o split com o geojson e depois calculado o nvdi e criado um csv
 este foi o modelo basico para teste
 
 
+Coloquei como comentario os plot para visualizar as images.
+
 '''
 import rasterio
 import numpy as np
@@ -79,6 +81,11 @@ with rasterio.open("masked.tif", "w", **out_meta) as dest:
 filemask='masked.tif'
 dataset = rasterio.open(filemask)
 
+
+#TODO este calculo nao sei se esta correto
+# mas foi feito baseado ao que esta no descritivo
+# alguns sites apresentam estar correto, mas por falta
+# de entendimento do assunto fica em aberto
 b3 = dataset.read(3)
 b4 = dataset.read(4)
 ndvi = np.zeros(b3.shape, dtype=rasterio.uint16)
@@ -93,6 +100,14 @@ ndvi = np.nan_to_num(ndvi)
 '''
 Terceiro Desafio
 '''
+#TODO calculei a media do vetor
+# nao sei se normalmente e assim calculado
+
+#TODO o desafio pede para ser feito a possibilidade de ser feito o calculo
+# via arquivo e geojson ou somente arquivo ja feito o clip
+# isso pode ser feito usado argparser futuramente, mas
+# nao o fiz pois tive mais problemas em entender a biblioteca
+
 media = np.median(ndvi)
 print('media ndvi: {}'.format(media))
 
