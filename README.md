@@ -7,3 +7,8 @@ O arquivo main.py foi utilizado para eu poder desenvolver a logica e verificar c
 
 o arquivo allfiles.py lê todos os arquivos .tif, calcula o a media do NVDI apos fazer o CLIP geoespacial.
 
+# Ambiente teste
+
+Foi utilizado o Linux Mint 19,
+ambiente virtual python3.6, não foi utilizado anaconda
+IDE Atom 
