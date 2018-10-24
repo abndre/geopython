@@ -11,4 +11,8 @@ o arquivo allfiles.py lê todos os arquivos .tif, calcula o a media do NVDI apos
 
 Foi utilizado o Linux Mint 19,
 ambiente virtual python3.6, não foi utilizado anaconda
-IDE Atom 
+IDE Atom
+
+# arquivo jupyter
+
+Fiz um arquivo jupyter onde testo as imagens, mas ainda sem entender muito bem o assunto. 
